@@ -1,0 +1,308 @@
+/* CSS Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* CSS variables */
+
+:root{
+    --navbar-height: 60px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 0px 20px;
+}
+
+#logo img{
+margin: 3px 6px;
+height: 60px;
+border-radius: 50px;
+
+}
+
+
+
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: .4;
+}
+
+#navbar ul li{
+
+  list-style: none;
+  font-size: 17px;
+}
+
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    color: white;
+    height: 232px;
+}
+
+#home::before{
+    content: "";
+    background: url(../food1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    z-index: -3;
+    opacity: 1 ;
+}
+
+#home h3{
+    text-align: center;
+}
+
+/* Utility Classes */
+.h{
+    font-size: 40px;
+    margin: 25px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.h2{
+    font-size: 26px;
+    margin: 25px;
+}
+
+.btn{
+    padding: 4px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px 0px;
+    background-color:chocolate;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+
+#services{
+    margin: 0px;    
+    display: flex ; 
+    position: absolute;
+    left: 15px;
+    right: 15px; 
+ 
+
+
+}
+
+#services .box{
+ 
+    border: 2px solid brown;
+    display: block  ;
+    height: 320px;
+    width: 210x;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color:  #f2ebeb;
+    
+}
+
+#services .box img{
+   height: 140px;
+   display: block;
+   margin: auto;
+   border-radius: 20px;
+}
+
+.services-container{
+    padding: 193px; 
+    font-family: 'Bree Serif', serif;
+    
+
+}
+
+#services .h2{
+    text-align: center;
+}
+
+#services .center{
+    text-align: center;
+}
+
+#client-section{
+ top: 33px;
+ margin: 33px;
+ padding: 33px;
+
+}
+
+#client-section::before{
+
+    content: "";
+    position: absolute;
+    background-image: url(../food2.jpg);
+    height: 37%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+    top: 130%;
+
+}
+
+#clients{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+section .para{
+ 
+    text-align: center;
+    margin-top: 130px;
+    padding: 10px;
+    /* border: 2px solid black;
+    background-color:#b9d1a6; */
+    font-size: 40px;
+
+}
+
+#clients .client-item .apple{
+    /* width: 338px;
+    height: 211px; */
+    width: 225px;
+height: 142px;
+    
+}
+
+#clients .client-item .gamma{
+    width: 225px;
+    height: 142px;
+    
+}
+
+#clients .client-item .messi{
+    width: 225px;
+    height: 142px;
+    
+}
+
+#clients .client-item .avi{
+    width: 225px;
+    height: 142px;
+    
+}
+
+.client-item{
+    padding: 4px;
+
+    
+}
+
+.client-item img{
+    border: 2px solid black;
+    border-radius: 5px;
+
+
+    
+}
+
+.center{
+    text-align: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 56%;
+    z-index: -1;
+    opacity: .5;
+    background: url(../contactus.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+   
+  
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+   
+}
+
+#contact-box form{
+    width: 30%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+
+
